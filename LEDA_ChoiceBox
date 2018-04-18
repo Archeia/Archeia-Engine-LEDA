@@ -1,0 +1,109 @@
+# ===================================================================
+#
+#   Image Choice Box by Archeia
+#   Uses ui.Image rather than ui.Selectable for Choice Boxes
+#   that require to be moved using "Auto"
+#
+# ===================================================================
+
+ui.UiFactory.customTypes["ui.ChoiceBox"] = {
+    "type": "ui.FreeLayout",
+    "frame": [0, 0, Graphics.width, Graphics.height],
+    "controls": [
+        {
+            "type": "ui.StackLayout",
+            "sizeToFit": true,
+            "alignmentX": 1,
+            "alignmentY": 0,
+            "visible": no,
+            "formulas": [
+                $ -> o.visible = $tempFields.choiceTimer.behavior.isRunning and $tempFields.choiceTimerVisible
+            ],
+            "controls": [
+                {
+                    "type": "ui.Text",
+                    "style": "choiceTimerText",
+                    "format": "%02d",
+                    "sizeToFit": true,
+                    "updateBehavior": "continuous",
+                    "formulas": [$ -> o.text = $tempFields.choiceTimer.behavior.minutes],
+                    "text": ""
+                },
+                {
+                    "type": "ui.Text",
+                    "sizeToFit": true,
+                    "style": "choiceTimerText",
+                    "text": ":"
+                },
+                {
+                    "type": "ui.Text",
+                    "style": "choiceTimerText",
+                    "sizeToFit": true,
+                    "format": "%02d",
+                    "updateBehavior": "continuous",
+                    "id": "seconds",
+                    "formulas": [$ -> o.text = $tempFields.choiceTimer.behavior.seconds],
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "type": "ui.VerticalScrollView",
+            "orientation": "vertical",
+            "sizeToFit": true,
+            "alignmentX": 1,
+            "frame": [0, 30, Graphics.width, Graphics.height - 220],
+            "margin": [0, 200, 0, 0],
+            "formulas": [
+                $ -> if $nvlGameMessage.visible then o.dstRect.y = $nvlGameMessage_message.textRenderer.currentY + 20
+            ],
+            "params": {
+                "dataField": ($ -> $dataFields.scene.choices),
+                "template": {
+                    "type": "ui.FreeLayout",
+                    "id": "choiceEntry",
+                    "alignmentX": "center",
+                    "sizeToFit": true,
+                    "style": "choiceBoxEntry",
+                    "margin": [0, 20, 0, 10],
+                    "formulas": [$ -> if @onInitialize then o.ui.enabled = $dataFields.scene.choices[o.index].isEnabled],
+                    "controls":[
+                        {
+                            "type": "ui.Text",
+                            "inheritProperties": true,
+                            "formatting": true,
+                            "wordWrap": false,
+                            "sizeToFit": true,
+                            "styles": ["choiceUIText"],
+                            "alignmentX": 1,
+                            "alignmentY": 1,
+                            "frame": [0, 0],
+                            "formulas": [$ -> o.text = lcs($dataFields.scene.choices[o.parent.index]?.text)],
+                            "zIndex": 8200
+                        },
+                        {
+                            # Change Type from Selectable to ImageMap
+                            "type": "ui.ImageMap",
+                            "images": ["Choice_Idle", "Choice_Active", "Choice_Idle", "Choice_Active", "Choice_Active"]
+                            "updateBehavior": "continuous"
+                            "hotspots": [
+                                "rect": [0, 0, 1280, 96]
+                                "inheritProperties": true,
+                                "actions":{
+                                        "name": "executeFormulas",
+                                        "params": [
+                                            $ -> o.parent.parent.parent.parent
+                                            $ -> $dataFields.scene.choices[o.parent.parent.index]
+                                        ]
+                                }
+                            ]
+                            "zIndex": 4000
+                        },
+
+                    ]
+                }
+            }
+        }
+        
+    ]
+}
