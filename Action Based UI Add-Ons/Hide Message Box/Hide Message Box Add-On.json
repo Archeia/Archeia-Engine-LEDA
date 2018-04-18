@@ -1,0 +1,528 @@
+[
+    {
+        "id": "gs.SetTargetMessage",
+        "params": {
+            "id": "gameMessage_message",
+            "numberDomain": "com.degica.vnm.default",
+            "number": 0,
+            "type": 1,
+            "clear": 0
+        },
+        "indent": 0,
+        "uid": "C67F51AA006BB8486B2AC1E14D39B9D8402C"
+    },
+    {
+        "id": "gs.GetInputData",
+        "params": {
+            "field": 132,
+            "state": 0,
+            "targetVariable": {
+                "name": "Message Box Visibility",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "uid": "CC225AAA7BB4F645441A18A766C680F6EAC7",
+        "indent": 0
+    },
+    {
+        "id": "gs.Script",
+        "params": {
+            "script": "SceneManager.scene.messageAreas[0].layout.controls[1].opacity = GameManager.variableStore.tempBooleans[0] ? 255 : 0"
+        },
+        "indent": 0,
+        "uid": "EBD3495441DA9445676B898548C7513C9406",
+        "expanded": true
+    },
+    {
+        "id": "gs.Condition",
+        "params": {
+            "variable": {
+                "name": "Input Data",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 2,
+            "textValue": "",
+            "switchValue": 0,
+            "valueType": 0,
+            "operation": 0,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 0,
+        "uid": "211F17A67FA6E445AA2A734382B0ED81FC10"
+    },
+    {
+        "id": "gs.ChangeBooleanVariables",
+        "params": {
+            "target": 0,
+            "targetReferenceDomain": "com.degica.vnm.default",
+            "targetReference": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "name": "Input Data",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetRangeScope": 0,
+            "rangeStart": 0,
+            "rangeEnd": 0,
+            "value": 2,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 1,
+        "uid": "4D3D38510419804293183202A6425941907E"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 99,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 1,
+        "uid": "118BACB166E71747EA89E937272448912BDD"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 101,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 1,
+        "uid": "7887F1A1617B9346FB481CD75EB681C460FE"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 102,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 1,
+        "uid": "44C8A1716035C94BA4083B719B70FB5C0E51"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 2,
+            "number": 0,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 1,
+        "uid": "0FEB1D6E50B84849AA6B5E29CBF6F0C22A08"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 2,
+            "number": 300,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 1,
+        "uid": "EF38D0E6805B1744767A9877EBE2F7A340C9"
+    },
+    {
+        "id": "gs.Condition",
+        "params": {
+            "variable": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 0,
+            "textValue": "",
+            "switchValue": 1,
+            "valueType": 1,
+            "operation": 0,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 1,
+        "uid": "D11918F77D6F5844C65AEA037F8CB3E7C4F7"
+    },
+    {
+        "id": "vn.MessageVisibility",
+        "params": {
+            "duration": 0,
+            "waitForCompletion": true,
+            "visible": 1,
+            "animation": {
+                "type": 1,
+                "movement": 3,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            },
+            "fieldFlags": {
+                "duration": 0
+            }
+        },
+        "indent": 2,
+        "uid": "5357F86E12494743E59890037999D38A2819"
+    },
+    {
+        "id": "gs.ConditionElse",
+        "params": {},
+        "indent": 1,
+        "uid": "79CB28AC4B4BC847936A8406DFCE50DBA594"
+    },
+    {
+        "id": "vn.MessageVisibility",
+        "params": {
+            "duration": 0,
+            "waitForCompletion": true,
+            "visible": 0,
+            "animation": {
+                "type": 1,
+                "movement": 3,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            },
+            "fieldFlags": {
+                "duration": 0
+            }
+        },
+        "indent": 2,
+        "uid": "88626C9B6FC241415C4A94A16710AFBCE97D"
+    },
+    {
+        "id": "gs.Condition",
+        "params": {
+            "variable": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 0,
+            "textValue": "",
+            "switchValue": 0,
+            "valueType": 1,
+            "operation": 0,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 1,
+        "uid": "29C07B7C7EB1F14A7C8809578159D5BAF9B7"
+    },
+    {
+        "id": "gs.GetInputData",
+        "params": {
+            "field": 11,
+            "state": 0,
+            "targetVariable": {
+                "name": "Input Data",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 2,
+        "uid": "9755A97A3EF1D44EB8282A17C65CC2BCA005"
+    },
+    {
+        "id": "gs.Condition",
+        "params": {
+            "variable": {
+                "name": "Input Data",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "numberValue": 2,
+            "textValue": "",
+            "switchValue": 0,
+            "valueType": 0,
+            "operation": 0,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 2,
+        "uid": "E332BB192C49A34CAA0BAA2687E8FB9016B4"
+    },
+    {
+        "id": "gs.ChangeBooleanVariables",
+        "params": {
+            "target": 0,
+            "targetReferenceDomain": "com.degica.vnm.default",
+            "targetReference": {
+                "index": 0,
+                "scope": 1,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetVariable": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "targetRangeScope": 0,
+            "rangeStart": 0,
+            "rangeEnd": 0,
+            "value": 0,
+            "previewBackground": {
+                "name": "$live_preview_snapshot"
+            }
+        },
+        "indent": 3,
+        "uid": "1C3E5DCB151F4146ED1A6D571C2C31D9F2D5"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 99,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 3,
+        "uid": "18A9C8B52386464389488B186A0D91F103D7"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 101,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 3,
+        "uid": "96F4DF0D32F4B44DBC49FA228CFFFA637D48"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 0,
+            "number": 102,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 3,
+        "uid": "264CFA124471C342F838FB561DEDD44A0967"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 2,
+            "number": 0,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 3,
+        "uid": "EF5B84D712AEC245C1795855B918BE9FA237"
+    },
+    {
+        "id": "vn.SetObjectData",
+        "params": {
+            "objectType": 2,
+            "number": 300,
+            "numberDomain": "com.degica.vnm.default",
+            "layer": 0,
+            "characterId": null,
+            "field": 10,
+            "numberValue": 0,
+            "textValue": {
+                "scope": 1,
+                "index": 0,
+                "domain": "com.degica.vnm.default"
+            },
+            "switchValue": {
+                "name": "Message Box Visible",
+                "index": 0,
+                "scope": 0,
+                "domain": "com.degica.vnm.default"
+            }
+        },
+        "indent": 3,
+        "uid": "BAECB4C442570545EE796A71AD9B7B440A71"
+    },
+    {
+        "id": "vn.MessageVisibility",
+        "params": {
+            "duration": 0,
+            "waitForCompletion": true,
+            "visible": 1,
+            "animation": {
+                "type": 1,
+                "movement": 3,
+                "mask": {
+                    "graphic": null,
+                    "vague": 30
+                }
+            },
+            "easing": {
+                "type": 0,
+                "inOut": 1
+            },
+            "fieldFlags": {
+                "duration": 0
+            }
+        },
+        "indent": 3,
+        "uid": "57693E193D96B24E891961B423DA500DAF3C"
+    }
+].novelsharp/vn-scene-command

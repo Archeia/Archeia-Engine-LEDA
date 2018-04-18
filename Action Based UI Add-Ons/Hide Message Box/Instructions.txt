@@ -1,0 +1,25 @@
+# ==========================================================================
+# Installation Instructions
+# ==========================================================================
+
+1.) Create a new Common Event with the following properties:
+- Auto
+- Runs Parallel
+- Single Instance
+- Name Local Number Variable #1 to Input Data.
+- Name Local Switch #1 to Message Box Visibility. 
+
+2.) Copy and Paste the following Commands from Hide Message Box Add-On.json inside the common event.
+
+
+3.) It should look like ImageSetup.png if everything is setup just right.
+
+
+# ==========================================================================
+# Questions and Answers
+# ==========================================================================
+
+Q1.) Why is this not an extension?
+- Because we cannot access the default ID (com.degica.vnm.default). If this were an extension, you will have to manually
+set all variables and switches to the default ID instead. The only way to bypass this is to transform Action Game UI to an
+extension to be able to share IDs.
