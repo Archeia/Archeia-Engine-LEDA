@@ -1,6 +1,6 @@
 # ===================================================================
 #
-#   Archeia Engine LEDA - Better Auto Screen Scaling
+#   Yami and Archeia Engine -- LEDA -- Better Auto Screen Scaling
 #   Fixes the issue with VNM not scaling properly.
 #   
 # ===================================================================
