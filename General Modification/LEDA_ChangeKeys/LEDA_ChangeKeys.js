@@ -42,18 +42,6 @@ Component_GameSceneBehavior.prototype.updateUIVisibilityShortcut = function() {
   }
 };
 
-// Updates the full screen video played via Play Movie command.
-// ----------------------------------------------------------------------- //
-    Component_GameSceneBehavior.prototype.updateVideo = function() {
-      if (this.object.video !== null) {
-        this.object.video.update();
-        if (this.object.settings.allowVideoSkip && (Input.trigger(Archeia.AEL_KEY.InputOK) || Input.trigger(Archeia.AEL_KEY.InputOK_ALT) || Input.Mouse.buttons[Input.Mouse.LEFT] === 2)) {
-          this.object.video.stop();
-        }
-        return Input.clear();
-      }
-    };
-
 //=============================================================================
 // Component_MessageTextRenderer
 //=============================================================================
