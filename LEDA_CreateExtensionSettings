@@ -14,6 +14,7 @@ http://archeia.moe
 
 >>> Special Message~ <<<
 ----------------------------------------------------------------------------------------------------------
+- If you'd like to donate, here's my Ko-Fi Page: https://ko-fi.com/A215KAOs
 - Please support my Patreon so I can have more time to create new stuff! (https://www.patreon.com/archeia)
 
 >>> Features <<<
@@ -33,7 +34,7 @@ Changelog:
 ** December 15, 2017 (GMT+8:00)
 Changed Line 58 from:
 "$ -> if $gameMessageNVL.visible then o.dstRect.y = $gameMessageNVL_message.textRenderer.currentY + 20"
-to 
+to
 "$ -> if $nvlGameMessage.visible then o.dstRect.y = $nvlGameMessage_message.textRenderer.currentY + 20"
 
 ** Version 1.0.0.0
@@ -62,3 +63,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+>>> Features <<<
+----------------------------------------------------------------------------------------------------------
+Change keyboard input for specific Visual Novel Maker games.
+This plugin overwrites a lot of input functions.
+This allows you to use Spacebar and Enter Key to proceed messages.
+Backspace will hide the window.
+
+>>> Changelog <<<
+----------------------------------------------------------------------------------------------------------
+1.0.0.0 - Initial Release (1/25/2019)
+
+>>> Special Message~ <<<
+----------------------------------------------------------------------------------------------------------
+- If you'd like to donate, here's my Ko-Fi Page: https://ko-fi.com/A215KAO
