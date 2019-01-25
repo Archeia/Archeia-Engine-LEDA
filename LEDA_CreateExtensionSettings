@@ -67,7 +67,6 @@ SOFTWARE.
 
 >>> Features <<<
 ----------------------------------------------------------------------------------------------------------
-Change keyboard input for specific Visual Novel Maker games.
 This plugin overwrites a lot of input functions.
 This allows you to use Spacebar and Enter Key to proceed messages.
 Backspace will hide the window.
