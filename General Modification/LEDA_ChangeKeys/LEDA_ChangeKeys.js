@@ -2,7 +2,7 @@
 // 
 //  Archeia Engine  LEDA -- Change Keys
 // 
-//  Version 1.0.0 - 1/25/2019
+//  Version 1.0.0.1 - 1/25/2019
 // 
 //  Change keyboard input for specific Visual Novel Maker games.
 //  This plugin overwrites a lot of input functions.
@@ -86,7 +86,7 @@ gs.Component_MessageTextRenderer.prototype.setupEventHandlers = function() {
         _this.waitForKey = false;
         _this.isWaiting = false;
       }
-      if (_this.isWaiting && !_this.waitForKey && !_this.waitCounter && Input.keys[Archeia.AEL_KEY.InputOK] || Input.keys[Archeia.AEL_KEY.InputOK_ALT] ) {
+      if (_this.isWaiting && !_this.waitForKey && !_this.waitCounter && (Input.keys[Archeia.AEL_KEY.InputOK] || Input.keys[Archeia.AEL_KEY.InputOK_ALT]) ) {
         _this["continue"]();
       }
       if (_this.waitForKey) {
