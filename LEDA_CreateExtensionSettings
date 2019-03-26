@@ -44,7 +44,7 @@ to
 >>> License <<<
 ----------------------------------------------------------------------------------------------------------
 
-Copyright (c) 2017-2018 Archeia (Division Heaven)
+Copyright (c) 2017-2019 Archeia (Division Heaven)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -73,6 +73,7 @@ Backspace will hide the window.
 
 >>> Changelog <<<
 ----------------------------------------------------------------------------------------------------------
+1.0.2 - Fixed a typo that stops the script from functioning on 1.0.998 onwards.
 1.0.1 - Fixed crashing when using videos.
 1.0.0 - Initial Release (1/25/2019)
 
